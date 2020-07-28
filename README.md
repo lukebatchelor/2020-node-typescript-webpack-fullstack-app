@@ -1,7 +1,8 @@
-# 2020 Typescript Webpack Static App Template
+# 2020 Node Typescript Webpack Fullstack Template
 
 What it says on the box:
 
+- Node + Express backend
 - Typescript
 - Webpack
 - Static App

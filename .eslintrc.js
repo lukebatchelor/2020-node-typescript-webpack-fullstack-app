@@ -7,7 +7,7 @@ module.exports = {
   rules: {},
   overrides: [
     {
-      files: ['*.{ts,tsx}'],
+      files: ['client/**/*.{ts,tsx}'],
       parser: '@typescript-eslint/parser',
       plugins: ['react', '@typescript-eslint'],
       extends: [
@@ -36,6 +36,18 @@ module.exports = {
       rules: {
         '@typescript-eslint/explicit-module-boundary-types': 0,
       },
+    },
+    {
+      files: ['server/**/*.ts'],
+      parser: '@typescript-eslint/parser',
+      plugins: ['@typescript-eslint'],
+      extends: [
+        'eslint:recommended',
+        'plugin:@typescript-eslint/recommended',
+        'prettier/@typescript-eslint',
+        'plugin:prettier/recommended',
+      ],
+      rules: {},
     },
   ],
 };

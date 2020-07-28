@@ -6,10 +6,10 @@ const CopyPlugin = require('copy-webpack-plugin');
 const PUBLIC_URL = process.env.PUBLIC_URL || '';
 
 const config = {
-  context: path.resolve(__dirname, 'src/'),
+  context: path.resolve(__dirname, 'client/src/'),
   entry: './index.tsx',
   output: {
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'dist', 'client'),
   },
   devServer: {
     contentBase: path.resolve(__dirname, './public'),
